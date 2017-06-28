@@ -1,0 +1,154 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+section {
+	text-align: center;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+li {
+	list-style: none;
+}
+
+/* Alphabet */
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 950px;
+	margin-bottom: 100px;
+}
+
+#alphabet {
+	margin: 10px auto;
+	padding: 0;
+	max-width: 825px;
+	list-style: none;
+	background: #7a8288;
+}
+
+#alphabet li {
+	float: left;
+	margin: 0 10px 10px 0;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #7a8288;
+	padding-top:12.5px;
+}
+
+#alphabet li:hover {
+	background: #000000;
+	border: 1px solid #7a8288;
+	color: #7a8288;
+	padding-top:12.5px;
+}
+
+/* Category */
+
+#category_section {
+	clear: both;
+	text-align: center;
+	font-size: 1.25em;
+	margin: 0 auto;
+}
+
+#category {
+	padding-top: 25px;
+}
+
+/* Guesses */
+
+#word {
+	display: inline-block;
+	padding: 25px 0 35px 0;
+	max-width: 500px;
+	
+}
+
+
+/* user lives */
+
+#lives {
+	clear: both;
+}
+
+/* hangman drawing */
+
+canvas {
+	clear: both;
+	float: left;
+	border: 1px solid #7a8288;
+	padding: 25px 0 70px 0;
+	margin: 25px 25px 25px 50px;
+}
+
+/* button */
+
+button {
+	background: #272B30;
+	border: 1px solid #7a8288;
+	padding: 10px 20px;
+	margin-top: 25px;
+}
+
+button:hover {
+	background: #000000;
+	border: 1px solid #7a8288;
+	color: #7a8288;
+	padding: 10px 20px;
+}
+
+/* footer */
+
+.container {
+	height: 100px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+
+#footer {
+	font-size: 10px;
+	text-align: center;
+	color: #dddddd;
+	background: #666666;
+	border-top: 5px solid #4aaaa5;
+	position: fixed;
+	width: 110%;
+	bottom: 0;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	padding: 25px 0;
+}
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+	.guessLetter {
+		padding: 10px;
+		float: left;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	#alphabet {
+		margin-left: 50px;
+	}
+
+canvas {
+	margin-left: 25px;
+}
+
+
+}
