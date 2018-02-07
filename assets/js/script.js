@@ -15,7 +15,7 @@ var words = ["brooklyn", "chicago", "manhattan", "portland", "boston", "nashvill
 	var remainingLetters="word.length";
 
 	var targetContainer = document.getElementById('word')
-	//targetContainer.innerHTML = answerArray.join(" ");
+
 
 	var play = function () {
 		lives = 10;	
@@ -59,11 +59,8 @@ var words = ["brooklyn", "chicago", "manhattan", "portland", "boston", "nashvill
 
 		targetContainer.innerHTML = answerArray.join(" ");
 
-
-
 	}
 
-		
 }
 
 
