@@ -1,4 +1,4 @@
-var words = ["brooklyn", "chicago", "manhattan", "portland", "boston", "nashville"];
+var words = ["brooklyn", "chicago", "manhattan", "portland", "boston", "nashville", "seattle", "austin"];
 
 	var word = words[Math.floor(Math.random()*words.length)];
 
@@ -62,9 +62,6 @@ var words = ["brooklyn", "chicago", "manhattan", "portland", "boston", "nashvill
 	}
 
 }
-
-
-
 	play();
 
 document.getElementById("reset").onclick = play;
