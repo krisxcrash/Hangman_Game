@@ -10,7 +10,7 @@ var targetContainer = document.getElementById('word')
 		answerArray[i] = "_";
 	}
 
-function play() {
+var play = function() {
 	lives = 10;	
 	userLives.innerHTML = "You have " + lives + " left.";
 	
@@ -22,7 +22,6 @@ function play() {
 
 	document.onkeyup = function () {
 		var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
-		
 		var validAnswer =false;
 
 		if (userGuess.length !== 1) {
@@ -41,6 +40,7 @@ function play() {
 			 	lives--;
 			 	userLives.innerHTML = "You have " + lives + " left.";
 			 }
+
 			 if (lives === 0 ) {
 			 	document.onkeyup = null;
 			 }
@@ -49,7 +49,6 @@ function play() {
 		targetContainer.innerHTML = answerArray.join(" ");
 
 	}
-
 }
 	play();
 
